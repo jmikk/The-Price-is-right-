@@ -70,7 +70,7 @@ for card in cardID:
 			final_list.append("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index]+"\n")
 			if bigmode == "yes":
 				print("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index])
-		if b.text == "ask" and BidOrAsk == "bid" and float(a.text) > float(userSetPrice[index])+float(HowClose):
+		if b.text == "ask" and BidOrAsk == "bid" and float(a.text) < float(userSetPrice[index])+float(HowClose):
 			#print("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index])
 			final_list.append("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index]+"\n")
 			if bigmode == "yes":
