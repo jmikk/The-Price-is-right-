@@ -54,7 +54,7 @@ if BidOrAsk == "bid":
 		cardSeason.append(y.text)
 		userSetPrice.append(z.text)
 index=0
-print("It will take approxamitly "+ str(count*1)+" secounds to shred all of your cards please wait.")
+print("It will take approxamitly "+ str(count)+" secounds to shred all of your cards please wait.")
 for card in cardID:
 	#print(card + cardSeason[index]+"Step1")
 	#pings the API for each card.
@@ -73,7 +73,7 @@ for card in cardID:
 		if b.text == "ask" and BidOrAsk == "bid" and float(a.text) > float(userSetPrice[index])+float(HowClose):
 			#print("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index])
 			final_list.append("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index]+"\n")
-			if bidmode == "yes":
+			if bigmode == "yes":
 				print("https://www.nationstates.net/page=deck/card="+cardID[index]+"/season="+cardSeason[index])
 	#sleeper(card,cardSeason[index])
 	index=index+1
