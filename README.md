@@ -13,3 +13,9 @@ Would you like live out put? Yes/no  This is great for people who have way to ma
 
 
 This does use the API so please do not run it with other NS based programs running, you can browse NS while this is running and will not run into any issues. 
+
+
+To install you will need to install a few dependicies.  To do that make sure you have pip installed and then type 
+pip install beatifulsoup4 
+and
+pip install lxml
